@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>慈　商品</title>
+  <link rel="stylesheet" href="/css/common.css" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+
+<body class="body">
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="#">お問い合わせ</a></li>
+        <li class="header__nav-item"><a href="#">商品</a></li>
+        <li class="header__nav-item"><a href="#">ホーム</a></li>
+      </ul>
+    </nav>
+    <h1 class="header__logo"><a href="#">LOGOが入る</a></h1>
+    <p class="header__shop">
+    <p class="header__shop"><img src="../images/shop.png" alt="shop" /></p>
+    </p>
+  </header>
+
+  <main class="main">
+    <h2 class="main__tagline">商品</h2>
+  </main>
+
+  
+<div class="s__shop-container">
+  <ul id="s__shop-container-list">
+  <!--ここから１つのアイテム-->
+  <li class="s__shop-container-item">
+      <!--商品画像をいれる-->
+    <div class="s__shop-container-img">
+    <ul class="s__shop-container-img-gallery">
+      <li class="s__shop-container-gallery-item">
+        <img src="../images/plate.png" alt="商品">
+      </li>
+    </ul>
+    <ul class="s__shop-container-img-choice">
+      <li class="s__shop-container-choice-item">
+        <img src="../images/plate.png" alt="商品" />
+      </li>
+      <li class="s__shop-container-choice-item">
+        <img src="./img-2.png" alt="商品"/>
+      </li>
+    </ul>
+    </div>
+        <!--商品価格等-->
+        <div class="s__shop-container-detail">
+          <span class="s__shop-container-detail-name">
+            商品名が入りますよ
+          </span>
+          <p class="s__shop-container-detail-price">
+            &yen;120000000
+          </p>
+          <p class="s__shop-container-detail-size">
+            サイズ:約○(W)×○(D)×○(H)cm
+          </p>
+          <!--カート機能-->
+          <div class="s__shop-detail-cart">
+              <form action="php-passをいれる" method="post">
+                <!--購入者のIDを取得-->
+                <input type="hidden" name="id" value="ユーザーのIDを出力するphp">
+                <!--カートボタンの装飾-->
+              <div class="s__shop-detail-cart-btn">
+                <button class="shop_detail-cart-btn-deco" type="submit">
+                  カートにいれる
+                </button>
+              </div>
+              </form>
+          </div>
+        </div>
+  </li>
+</ul>
+</div>
+        <!--共通-->
+        <section class="s__contact">
+          <small class="s__contact-title-en">Contact</small>
+          <h3 class="s__contact-title">お問い合わせ</h3>
+          <p class="s__contact-text">
+            フォームでのご質問やお問い合わせなどを承ります。
+          </p>
+          <p class="s__contact-btn">
+            <a href="" class="s__contact-button">詳しくはこちら</a>
+          </p>
+        </section>
+        <div class="s__totop">
+          <div class="s__totop-triangle">三角にする</div>
+          <p class="s__totop-text">上に戻る</p>
+        </div>
+
+        <footer class="footer">
+          <h4 class="footer__logo">
+            <a href="#"><img src="" alt="footerlogo" /></a>
+          </h4>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#">ホーム</a></li>
+              <li class="footer__nav-item"><a href="#">商品</a></li>
+              <li class="footer__nav-item"><a href="#">お問い合わせ</a></li>
+              <li class="footer__nav-item"><a href="#">プライバシーポリシー</a></li>
+            </ul>
+          </nav>
+          <small>&copy;Earthenware 2021 Built with Storefront & WooCommerce.</small>
+        </footer>
+</body>
+
+</html>
