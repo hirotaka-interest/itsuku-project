@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>慈</title>
+  <title>慈 商品</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/script.js"></script>
 </head>
@@ -23,51 +22,48 @@
         <li class="header__nav-item"><a class="header_nav-link" href="#">ホーム</a></li>
       </ul>
     </nav>
-    <h1 class="header__tagline">キャッチコピーが入るよん</h1>
+    <div class="header__tagline">
+      <small class="header__tagline-en">products</small>
+      <h1 class="header__tagline-title">商品</h1>
+    </div>
     <div class="header__scrolldown"></div>
   </header>
 
 
   <main class="main">
     <div class="main__inner">
-      <section class="itukuyaki">
-        <small class="itukuyaki__title-en">itukuyaki</small>
-        <h2 class="itukuyaki__title">慈焼とは</h2>
-        <p class="itukuyaki__text">
-          慈焼は、陶器の歴史を覆す、新たな手法として国内はもとより、世界中の方々に注目されています。
-          なかでも華麗なる造形美を特技とする「柏崎剛」は、古きよき技法と現代感覚をみごとに調和させた新感覚の作品を造り続けています。
-        </p>
-        <figure class="itukuyaki__photo"><img class="itukuyaki__image" src="./images/ituki_photo.png" alt="itukuyaki">
-        </figure>
-      </section>
+      <div class="shop">
+        <ul class="shop__container-list">
+          <!--ここから１アイテムずつ-->
+          <li class="shop__container-item">
+            <ul class="shop__img-gallery">
+              <li class="shop__img-gallery-item"><img class="shop_image" src="../images/plate.png" alt="商品"></li>
+            </ul>
+            <ul class="shop__img-choice">
+              <li class="shop__img-choice-item"><img class="shop_image" src="../images/plate.png" alt="商品"></li>
+              <li class="shop__img-choice-item"><img class="shop_image" src="../images/plate.png" alt="商品"></li>
+            </ul>
+            <!--商品価格等-->
+            <div class="shop__detail">
+              <h3 class="shop__detail-name">商品名が入りますよ</h3>
+              <p class="shop__detail-price">&yen;120000000</p>
+              <p class="shop__detail-size">サイズ:約○×○×○cm</p>
+              <button class="shop__detail-cartbtn" type="submit">購入にすすむ</button>
+            </div>
+          </li>
 
-      <section class="about">
-        <small class="about__title-en">About</small>
-        <h2 class="about__title">私たちについて</h2>
-        <p class="about__photo"><img class="about__image" src="./images/about_photo.png" alt="aboutphoto"></p>
-        <p class="about__text">
-          また常に新しい意欲と創造に挑戦し、権威ある陶芸展で多数入選・入賞に輝き、各地の美術館・百貨店で「柏崎剛
-          作陶展」が開催され好評を博している新時代の慈焼の陶芸作家です。
-        </p>
-        <ul class="about__sns-list">
-          <li class="about__sns-item"><i class="fab fa-youtube"></i></li>
-          <li class="about__sns-item"><i class="fab fa-twitter"></i></li>
-          <li class="about__sns-item"><i class="fab fa-instagram"></i></li>
-        </ul>
-      </section>
 
-      <section class="products">
-        <small class="products__title-en">Products</small>
-        <h2 class="products__title">商品</h2>
-        <ul class="products__photo-list">
-          <li class="products__photo-item"><img class="products__photo-image" src="./images/item3.png" alt="item"></li>
-          <li class="products__photo-item"><img class="products__photo-image" src="./images/item2.png" alt="item"></li>
-          <li class="products__photo-item"><img class="products__photo-image" src="./images/item1.png" alt="item"></li>
+
+
+
+
+
+
         </ul>
-        <a class="products__link" href="#">詳しくはこちら</a>
-      </section>
+      </div>
     </div>
   </main>
+
 
 
   <section class="contact">
