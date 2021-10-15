@@ -13,8 +13,9 @@
 
 <body class="body">
   <header class="header">
-    <div class="header__logo"><a class="header_logo-link" href="#"><img class="header_logo-image"
-          src="./images/logo.png" alt="logo"></a></div>
+    <div class="header__logo"><a class="header_logo-link" href="#">
+        <img title="慈" class="header_logo-image" src="./images/logo.png" alt="logo"></a>
+    </div>
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item"><a class="header_nav-link" href="#">お問い合わせ</a></li>
@@ -22,10 +23,7 @@
         <li class="header__nav-item"><a class="header_nav-link" href="#">ホーム</a></li>
       </ul>
     </nav>
-    <div class="header__tagline">
-      <small class="header__tagline-en">products</small>
-      <h1 class="header__tagline-title">商品</h1>
-    </div>
+    <h1 class="header__tagline-title"><span class="header__tagline-en">Products</span>商品</h1>
     <div class="header__scrolldown"></div>
   </header>
 
@@ -37,19 +35,22 @@
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
             <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop_image" src="../images/plate.png" alt="商品"></li>
+              <li class="shop__img-gallery-item"><img title="商品名をいれます" class="shop_image" src="../images/plate.png"
+                  alt="慈焼商品"></li>
             </ul>
             <ul class="shop__img-choice">
-              <li class="shop__img-choice-item"><img class="shop_image" src="../images/plate.png" alt="商品"></li>
-              <li class="shop__img-choice-item"><img class="shop_image" src="../images/plate.png" alt="商品"></li>
+              <li class="shop__img-choice-item"><img title="商品名をいれます" class="shop_image" src="../images/plate.png"
+                  alt="慈焼商品"></li>
+              <li class="shop__img-choice-item"><img title="商品名をいれます" class="shop_image" src="../images/plate.png"
+                  alt="慈焼商品"></li>
             </ul>
             <!--商品価格等-->
-            <div class="shop__detail">
-              <h3 class="shop__detail-name">商品名が入りますよ</h3>
-              <p class="shop__detail-price">&yen;120000000</p>
-              <p class="shop__detail-size">サイズ:約○×○×○cm</p>
+            <dl class="shop__detail">
+              <dt class="shop__detail-name">商品名が入りますよ</dt>
+              <dd class="shop__detail-price">&yen;120000000</dd>
+              <dd class="shop__detail-size">サイズ:約○×○×○cm</dd>
               <button class="shop__detail-cartbtn" type="submit">購入にすすむ</button>
-            </div>
+            </dl>
           </li>
 
 
@@ -67,24 +68,21 @@
 
 
   <section class="contact">
-    <div class="contact-title">
-      <small class="contact__title-en">Contact</small>
-      <h2 class="contact__title">お問い合わせ</h2>
-    </div>
-    <form class="form" action="#php" method="post">
-      <dl class="form__def-name">
-        <dt class="form__def-name-title"><label for="name">お名前</label></dt>
-        <dd class="form__def-name-data"><input type="text" name="name"></dd>
+    <h2 class="contact__title"><span class="contact__title-en">Contact</span>お問い合わせ</h2>
+    <form class="contact__form" action="#php" method="post">
+      <dl class="contact__form-name">
+        <dt class="contact__form-name-title"><label for="name">お名前</label></dt>
+        <dd class="contact__form-name-data"><input type="text" name="name"></dd>
       </dl>
-      <dl class="form__def-mail">
-        <dt class="form__def-mail-title"><label for="mail">メールアドレス</label></dt>
-        <dd class="form__def-mail-data"><input type="text" name="mail"></dd>
+      <dl class="contact__form-mail">
+        <dt class="contact__form-mail-title"><label for="mail">メールアドレス</label></dt>
+        <dd class="contact__form-mail-data"><input type="text" name="mail"></dd>
       </dl>
-      <dl class="form__def-contact">
-        <dt class="form__def-contact-title"><label for="conatct">お問い合わせ内容</label></dt>
-        <dd class="form__def-contact-data"><textarea name="contact"></textarea></dd>
+      <dl class="contact__form-contact">
+        <dt class="contact__form-contact-title"><label for="conatct">お問い合わせ内容</label></dt>
+        <dd class="contact__form-contact-data"><textarea name="contact"></textarea></dd>
       </dl>
-      <button class="contact_submitbtn" type="submit">この内容で送信する</button>
+      <button class="contact__submit-btn" type="submit">この内容で送信する</button>
     </form>
   </section>
 
@@ -95,8 +93,8 @@
 
 
   <footer class="footer">
-    <h4 class="footer__logo"><a class="footer__link" href="#"><img img class="footer_logo-image" src="./images/logo.png"
-          alt="footerlogo"></a></h4>
+    <h4 class="footer__logo"><a class="footer__link" href="#">
+        <img title="慈" class="footer_logo-image" src="./images/logo.png" alt="footerlogo"></a></h4>
     <nav class="footer__nav">
       <ul class="footer__nav-list">
         <li class="footer__nav-item"><a class="footer_nav-link" href="#">ホーム</a></li>
@@ -105,7 +103,7 @@
         <li class="footer__nav-item"><a class="footer_nav-link" href="#">プライバシーポリシー</a></li>
       </ul>
     </nav>
-    <small class="footer__copy">&copy;Earthenware 2021 Built with Storefront & WooCommerce.</small>
+    <p class="footer__copy">&copy;Earthenware 2021 Built with Storefront & WooCommerce.</p>
   </footer>
 </body>
 
