@@ -14,30 +14,32 @@
 
 <body class="body">
   <header class="header">
-    <div class="header__logo"><a class="header_logo-link" href="#">
+    <div class="header__inner">
+      <div class="header__logo"><a class="header_logo-link" href="#">
         <img class="header_logo-image" src="./images/logo.png" alt="慈のロゴ画像"></a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header_nav-link" href="#">お問い合わせ</a></li>
+          <li class="header__nav-item"><a class="header_nav-link" href="#">商品</a></li>
+          <li class="header__nav-item"><a class="header_nav-link" href="#">ホーム</a></li>
+        </ul>
+      </nav>
+      <h1 class="header__tagline">キャッチコピーが入るよん</h1>
+      <div class="header__scrolldown"></div>
     </div>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a class="header_nav-link" href="#">お問い合わせ</a></li>
-        <li class="header__nav-item"><a class="header_nav-link" href="#">商品</a></li>
-        <li class="header__nav-item"><a class="header_nav-link" href="#">ホーム</a></li>
-      </ul>
-    </nav>
-    <h1 class="header__tagline">キャッチコピーが入るよん</h1>
-    <div class="header__scrolldown"></div>
-  </header>
+    </header>
 
 
   <main class="main">
     <div class="main__inner">
-      <section class="itukuyaki">
-        <h2 class="itukuyaki__title"><span class="itukuyaki__title-en">itukuyaki</span>慈焼とは</h2>
-        <p class="itukuyaki__text">
-          慈焼は、陶器の歴史を覆す、新たな手法として国内はもとより、世界中の方々に注目されています。
-          なかでも華麗なる造形美を特技とする「柏崎剛」は、古きよき技法と現代感覚をみごとに調和させた新感覚の作品を造り続けています。
-        </p>
-        <figure class="itukuyaki__photo"><img class="itukuyaki__image" src="./images/ituki_photo.png" alt="陶芸中の画像">
+      <section class="itsukuyaki">
+          <h2 class="itsukuyaki__title"><span class="itsukuyaki__title-en">itukuyaki</span>慈焼とは</h2>
+          <p class="itsukuyaki__text">
+            慈焼は、陶器の歴史を覆す、新たな手法として国内はもとより、世界中の方々に注目されています。
+            なかでも華麗なる造形美を特技とする「柏崎剛」は、古きよき技法と現代感覚をみごとに調和させた新感覚の作品を造り続けています。
+          </p>
+        <figure class="itsukuyaki__photo"><img class="itsukuyaki__image" src="./images/ituki_photo.png" alt="陶芸中の画像">
         </figure>
       </section>
 
@@ -94,6 +96,7 @@
 
 
   <footer class="footer">
+    <div class="footer__inner">
     <h4 class="footer__logo"><a class="footer__link" href="#">
         <img class="footer_logo-image" src="./images/logo.png" alt="慈のロゴ画像"></a></h4>
     <nav class="footer__nav">
@@ -105,6 +108,7 @@
       </ul>
     </nav>
     <p class="footer__copy">&copy;Earthenware 2021 Built with Storefront & WooCommerce.</p>
+  </div>
   </footer>
 </body>
 
