@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.itsukuyaki{
+    width: 100%;
+    writing-mode: vertical-rl;
+    .itsukuyaki__title{
+        font-size: 3.5rem;
+        position: relative;
+        .itsukuyaki__title-en{
+            position: absolute;
+            top: 6px;
+            right: -10px;
+            font-size: 14px;
+        }
+    }
+    .itsukuyaki__text{
+        height: 400px;
+    }
+    .itsukuyaki__photo{
+        position: absolute;
+        left: 0;
+    }
+}

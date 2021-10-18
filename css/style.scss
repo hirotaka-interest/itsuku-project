@@ -13,13 +13,14 @@
 // ==========================================================================
 @import "layout/_body";
 @import "layout/_header";
+@import "layout/_itsukuyaki";
 @import "layout/_footer";
-@import "layout/_footer-copyright";
-@import "layout/_important-notification";
-@import "layout/_key-visual";
-@import "layout/_contents-wrap";
-@import "layout/_section-banner";
-@import "layout/_page-top";
+// @import "layout/_footer-copyright";
+// @import "layout/_important-notification";
+// @import "layout/_key-visual";
+// @import "layout/_contents-wrap";
+// @import "layout/_section-banner";
+// @import "layout/_page-top";
 // @import "layout/_wrapper";
 // @import "layout/_single";
 // @import "layout/_double";
@@ -41,8 +42,8 @@
 // -----------------------------------------------------------------
 // Component
 // -----------------------------------------------------------------
-@import "object/component/_heading";
-@import "object/component/_button";
+// @import "object/component/_heading";
+// @import "object/component/_button";
 // @import "object/component/_text";
 // @import "object/component/_select";
 // @import "object/component/_thumbnail";
@@ -64,22 +65,22 @@
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-@import "object/project/_header";
-@import "object/project/_header-is-fixed";
-@import "object/project/_menu-open";
-@import "object/project/_main-common";
-@import "object/project/_main-jobsearch";
-@import "object/project/_main-basic";
-@import "object/project/_main-recruit";
-@import "object/project/_main-selection";
-@import "object/project/_main-condition";
-@import "object/project/_main-news";
-@import "object/project/_main-attentional-info";
-@import "object/project/_main-reasons";
-@import "object/project/_main-flow";
-@import "object/project/_main-about-choice";
-@import "object/project/_main-banner";
-@import "object/project/_footer";
+// @import "object/project/_header";
+// @import "object/project/_header-is-fixed";
+// @import "object/project/_menu-open";
+// @import "object/project/_main-common";
+// @import "object/project/_main-jobsearch";
+// @import "object/project/_main-basic";
+// @import "object/project/_main-recruit";
+// @import "object/project/_main-selection";
+// @import "object/project/_main-condition";
+// @import "object/project/_main-news";
+// @import "object/project/_main-attentional-info";
+// @import "object/project/_main-reasons";
+// @import "object/project/_main-flow";
+// @import "object/project/_main-about-choice";
+// @import "object/project/_main-banner";
+// @import "object/project/_footer";
 // @import "object/project/_footer-banner";
 // @import "object/project/_breadcrumbs";
 // @import "object/project/_footer-bottom";
@@ -257,26 +258,26 @@
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
-@import "object/utility/_use";
-@import "object/utility/_align";
-@import "object/utility/_clearfix";
-@import "object/utility/_margin";
-@import "object/utility/_table-width";
-@import "object/utility/_img-center";
-@import "object/utility/_flex";
-@import "object/utility/_width";
-@import "object/utility/_border";
-@import "object/utility/_word-break";
-@import "object/utility/_float";
+// @import "object/utility/_use";
+// @import "object/utility/_align";
+// @import "object/utility/_clearfix";
+// @import "object/utility/_margin";
+// @import "object/utility/_table-width";
+// @import "object/utility/_img-center";
+// @import "object/utility/_flex";
+// @import "object/utility/_width";
+// @import "object/utility/_border";
+// @import "object/utility/_word-break";
+// @import "object/utility/_float";
 
 
 // ==========================================================================
 // Library
 // ==========================================================================
-@import "libs/_slick";
-@import "libs/_slick-theme";
-@import "libs/_jquery-ui";
+// @import "libs/_slick";
+// @import "libs/_slick-theme";
+// @import "libs/_jquery-ui";
 
-.kenshi{
-  background:#db4b4b;
-}
+// .kenshi{
+//   background:#db4b4b;
+// }
