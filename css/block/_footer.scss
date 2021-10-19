@@ -15,15 +15,13 @@
         writing-mode: vertical-rl;
         margin: 0 auto 30px;
 
-    .footer__nav-item {
-        margin-left: 15px;
+        .footer__nav-item {
+            margin-left: 15px;
 
-        .footer_nav-link {
-            letter-spacing: 8px;
-            color:$clr-font02;
+            .footer_nav-link {
+                letter-spacing: 8px;
+                color:$clr-font02;
+            }
         }
     }
-
-    }
-
 }
