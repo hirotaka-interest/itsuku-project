@@ -1,0 +1,22 @@
+@charset "utf-8";
+.shop__container-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .shop__container-item {
+    width: 27%;
+    margin-right: 80px;
+
+    .shop__img-gallery-image {
+      width: 100%;
+    }
+
+    .shop__img-choice-item {
+      width: 20%;
+
+      .shop__img-choice-image {
+        width: 100%;
+      }
+    }
+  }
+}
