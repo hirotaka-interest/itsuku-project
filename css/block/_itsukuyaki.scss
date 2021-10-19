@@ -3,10 +3,12 @@
 .itsukuyaki {
     width: 100%;
     writing-mode: vertical-rl;
-
+    margin-bottom: 400px;
+    padding-right: 175px;
     .itsukuyaki__title {
         font-size: 3.5rem;
         position: relative;
+        margin-left: 70px;
 
         .itsukuyaki__title-en {
             position: absolute;
@@ -17,7 +19,10 @@
     }
 
     .itsukuyaki__text {
-        height: 400px;
+        height: 550px;
+        padding-top: 80px;
+        margin-left: 120px;
+        line-height: 3;
     }
     
     .itsukuyaki__photo {
