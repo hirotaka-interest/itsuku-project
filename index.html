@@ -14,30 +14,34 @@
 
 <body class="body">
   <header class="header">
-    <div class="header__logo"><a class="header_logo-link" href="#">
-        <img class="header_logo-image" src="./images/logo.png" alt="慈のロゴ画像"></a>
+    <div class="header__inner">
+      <div class="header__logo"><a class="header_logo-link" href="#">
+          <img class="header_logo-image" src="./images/logo.png" alt="慈のロゴ画像"></a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header_nav-link" href="#">お問い合わせ</a></li>
+          <li class="header__nav-item"><a class="header_nav-link" href="#">商品</a></li>
+          <li class="header__nav-item"><a class="header_nav-link" href="#">ホーム</a></li>
+        </ul>
+      </nav>
+      <h1 class="header__tagline">キャッチコピーが入るよん</h1>
+      <div class="header__scrolldown"></div>
     </div>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a class="header_nav-link" href="#">お問い合わせ</a></li>
-        <li class="header__nav-item"><a class="header_nav-link" href="#">商品</a></li>
-        <li class="header__nav-item"><a class="header_nav-link" href="#">ホーム</a></li>
-      </ul>
-    </nav>
-    <h1 class="header__tagline">キャッチコピーが入るよん</h1>
-    <div class="header__scrolldown"></div>
   </header>
 
 
   <main class="main">
     <div class="main__inner">
-      <section class="itukuyaki">
-        <h2 class="itukuyaki__title"><span class="itukuyaki__title-en">itukuyaki</span>慈焼とは</h2>
-        <p class="itukuyaki__text">
+      <section class="itsukuyaki">
+        <h2 class="itsukuyaki__title">
+          <span class="itsukuyaki__title-en">itukuyaki</span>慈焼とは
+        </h2>
+        <p class="itsukuyaki__text">
           慈焼は、陶器の歴史を覆す、新たな手法として国内はもとより、世界中の方々に注目されています。
           なかでも華麗なる造形美を特技とする「柏崎剛」は、古きよき技法と現代感覚をみごとに調和させた新感覚の作品を造り続けています。
         </p>
-        <figure class="itukuyaki__photo"><img class="itukuyaki__image" src="./images/ituki_photo.png" alt="陶芸中の画像">
+        <figure class="itsukuyaki__photo"><img class="itsukuyaki__image" src="./images/ituki_photo.png" alt="陶芸中の画像">
         </figure>
       </section>
 
@@ -65,27 +69,27 @@
         <a class="products__link" href="#">詳しくはこちら</a>
       </section>
     </div>
+
+
+    <section class="contact">
+      <h2 class="contact__title"><span class="contact__title-en">Contact</span>お問い合わせ</h2>
+      <form class="contact__form" action="#php" method="post">
+        <dl class="contact__form-name">
+          <dt class="contact__form-name-title"><label for="name">お名前</label></dt>
+          <dd class="contact__form-name-data"><input type="text" name="name"></dd>
+        </dl>
+        <dl class="contact__form-mail">
+          <dt class="contact__form-mail-title"><label for="mail">メールアドレス</label></dt>
+          <dd class="contact__form-mail-data"><input type="text" name="mail"></dd>
+        </dl>
+        <dl class="contact__form-contact">
+          <dt class="contact__form-contact-title"><label for="conatct">お問い合わせ内容</label></dt>
+          <dd class="contact__form-contact-data"><textarea name="contact"></textarea></dd>
+        </dl>
+        <button class="contact__submit-btn" type="submit">この内容で送信する</button>
+      </form>
+    </section>
   </main>
-
-
-  <section class="contact">
-    <h2 class="contact__title"><span class="contact__title-en">Contact</span>お問い合わせ</h2>
-    <form class="contact__form" action="#php" method="post">
-      <dl class="contact__form-name">
-        <dt class="contact__form-name-title"><label for="name">お名前</label></dt>
-        <dd class="contact__form-name-data"><input type="text" name="name"></dd>
-      </dl>
-      <dl class="contact__form-mail">
-        <dt class="contact__form-mail-title"><label for="mail">メールアドレス</label></dt>
-        <dd class="contact__form-mail-data"><input type="text" name="mail"></dd>
-      </dl>
-      <dl class="contact__form-contact">
-        <dt class="contact__form-contact-title"><label for="conatct">お問い合わせ内容</label></dt>
-        <dd class="contact__form-contact-data"><textarea name="contact"></textarea></dd>
-      </dl>
-      <button class="contact__submit-btn" type="submit">この内容で送信する</button>
-    </form>
-  </section>
 
 
   <div class="totop">
@@ -94,17 +98,19 @@
 
 
   <footer class="footer">
-    <h4 class="footer__logo"><a class="footer__link" href="#">
-        <img class="footer_logo-image" src="./images/logo.png" alt="慈のロゴ画像"></a></h4>
-    <nav class="footer__nav">
-      <ul class="footer__nav-list">
-        <li class="footer__nav-item"><a class="footer_nav-link" href="#">ホーム</a></li>
-        <li class="footer__nav-item"><a class="footer_nav-link" href="#">商品</a></li>
-        <li class="footer__nav-item"><a class="footer_nav-link" href="#">お問い合わせ</a></li>
-        <li class="footer__nav-item"><a class="footer_nav-link" href="#">プライバシーポリシー</a></li>
-      </ul>
-    </nav>
-    <p class="footer__copy">&copy;Earthenware 2021 Built with Storefront & WooCommerce.</p>
+    <div class="footer__inner">
+      <h4 class="footer__logo"><a class="footer__link" href="#">
+          <img class="footer_logo-image" src="./images/logo.png" alt="慈のロゴ画像"></a></h4>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a class="footer_nav-link" href="#">ホーム</a></li>
+          <li class="footer__nav-item"><a class="footer_nav-link" href="#">商品</a></li>
+          <li class="footer__nav-item"><a class="footer_nav-link" href="#">お問い合わせ</a></li>
+          <li class="footer__nav-item"><a class="footer_nav-link" href="#">プライバシーポリシー</a></li>
+        </ul>
+      </nav>
+      <p class="footer__copy">&copy;Earthenware 2021 Built with Storefront & WooCommerce.</p>
+    </div>
   </footer>
 </body>
 
