@@ -12,8 +12,7 @@
 </head>
 
 <body class="body">
-  <header class="header">
-    <div class="header__home">
+  <header class="header home">
       <div class="header__inner">
         <div class="header__logo"><a class="header_logo-link" href="#">
           <img class="header_logo-image" src="./images/logo.png" alt="慈のロゴ画像"></a>
@@ -28,7 +27,7 @@
         <h1 class="header__tagline">キャッチコピーが入るよん</h1>
         <div class="header__scrolldown"></div>
       </div>
-    </div>
+   
   </header>
 
 
@@ -77,15 +76,15 @@
       <form class="contact__form" action="#php" method="post">
         <dl class="contact__form-name">
           <dt class="contact__form-name-title"><label for="name">お名前</label></dt>
-          <dd class="contact__form-name-data"><input type="text" name="name"></dd>
+          <dd class="contact__form-name-data"><input type="text" name="name" class="contact__form-name-input"></dd>
         </dl>
         <dl class="contact__form-mail">
           <dt class="contact__form-mail-title"><label for="mail">メールアドレス</label></dt>
-          <dd class="contact__form-mail-data"><input type="text" name="mail"></dd>
+          <dd class="contact__form-mail-data"><input type="text" name="mail" class="contact__form-mail-input"></dd>
         </dl>
         <dl class="contact__form-contact">
           <dt class="contact__form-contact-title"><label for="conatct">お問い合わせ内容</label></dt>
-          <dd class="contact__form-contact-data"><textarea name="contact"></textarea></dd>
+          <dd class="contact__form-contact-data"><textarea name="contact" class="contact__form-textarea-input"></textarea></dd>
         </dl>
         <button class="contact__submit-btn" type="submit">この内容で送信する</button>
       </form>
