@@ -12,22 +12,21 @@
 </head>
 
 <body class="body">
-  <header class="header home">
-      <div class="header__inner">
-        <div class="header__logo"><a class="header_logo-link" href="#">
-          <img class="header_logo-image" src="./images/logo.png" alt="慈のロゴ画像"></a>
-        </div>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item"><a class="header_nav-link" href="#">お問い合わせ</a></li>
-            <li class="header__nav-item"><a class="header_nav-link" href="#">商品</a></li>
-            <li class="header__nav-item"><a class="header_nav-link" href="#">ホーム</a></li>
-          </ul>
-        </nav>
-        <h1 class="header__tagline">キャッチコピーが入るよん</h1>
-        <div class="header__scrolldown"></div>
+  <header class="header home" id="header">
+    <div class="header__inner">
+      <div class="header__logo"><a class="header_logo-link" href="#">
+        <img class="header_logo-image" src="./images/logo.png" alt="慈のロゴ画像"></a>
       </div>
-   
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header_nav-link" href="#contact">お問い合わせ</a></li>
+          <li class="header__nav-item"><a class="header_nav-link" href="shop/shop.html">商品</a></li>
+          <li class="header__nav-item"><a class="header_nav-link" href="index.html">ホーム</a></li>
+        </ul>
+      </nav>
+      <h1 class="header__tagline">キャッチコピーが入るよん</h1>
+      <div class="header__scrolldown"></div>
+    </div>
   </header>
 
 
@@ -66,12 +65,12 @@
           <li class="products__photo-item"><img class="products__photo-image" src="./images/item2.png" alt="慈焼作品"></li>
           <li class="products__photo-item"><img class="products__photo-image" src="./images/item1.png" alt="慈焼作品"></li>
         </ul>
-        <a class="products__link" href="#">詳しくはこちら</a>
+        <a class="products__link" href="shop/shop.html">詳しくはこちら</a>
       </section>
     </div>
 
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="contact__title"><span class="contact__title-en">Contact</span>お問い合わせ</h2>
       <form class="contact__form" action="#php" method="post">
         <dl class="contact__form-name">
@@ -93,14 +92,16 @@
 
 
   <div class="totop">
-    <p class="totop__text"><span class="totop__triangle">三角にする</span>上に戻る</p>
+    <a href="#header" class="totop__link">
+      <p class="totop__text"><span class="totop__triangle">三角にする</span>上に戻る</p>
+    </a>
   </div>
 
 
   <footer class="footer">
     <div class="footer__inner">
       <h4 class="footer__logo"><a class="footer__link" href="#">
-          <img class="footer_logo-image" src="./images/logo.png" alt="慈のロゴ画像"></a></h4>
+        <img class="footer_logo-image" src="./images/logo.png" alt="慈のロゴ画像"></a></h4>
       <nav class="footer__nav">
         <ul class="footer__nav-list">
           <li class="footer__nav-item"><a class="footer_nav-link" href="#">ホーム</a></li>
