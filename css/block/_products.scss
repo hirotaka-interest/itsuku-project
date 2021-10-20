@@ -5,20 +5,20 @@
     writing-mode: vertical-rl;
     margin-bottom: 400px;
     padding-right: 175px;
-
+    
     .products__title {
         font-size: 3.5rem;
         position: relative;
         margin-left: 70px;
-
+        
     }
-
+    
     .products__title-en {
         position: absolute;
         top: 6px;
         right: -10px;
         font-size: 14px;
-        }
+    }
     .products__photo-item:nth-of-type(1){
         padding-top:50px;
         margin-left: 10px;
@@ -30,5 +30,14 @@
     .products__photo-item:nth-of-type(3){
         padding-top:150px;
         margin-left: 60px;
+    }
+    
+    .products__link{
+        color: #fff;
+        margin-top: 590px;
+        display: inline-block;
+        padding: 0 10px;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
     }
 }
