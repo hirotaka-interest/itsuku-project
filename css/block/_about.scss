@@ -21,9 +21,11 @@
 
     .about__photo {
         margin-left: 60px;
+        width: 25%;
         
         .about__image {
             padding-top: 100px;
+            width: 100%;
         }
     }
 
@@ -31,6 +33,7 @@
         padding-top: 100px;
         margin-left: 60px;
         line-height: 3;
+        height: 600px;
     }
 
     .about__sns-list{
@@ -39,6 +42,9 @@
 
         .about__sns-item{
             margin-bottom: 60px;
+            .about__sns-link{
+                color: #fff;
+            }
         }
         
         .about__sns-item:last-child{

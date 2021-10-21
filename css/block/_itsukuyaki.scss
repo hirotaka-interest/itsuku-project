@@ -28,5 +28,10 @@
     .itsukuyaki__photo {
         position: absolute;
         left: 0;
+        width: 55%;
+        max-width: 1000px;
+       .itsukuyaki__image{
+           width: 100%;
+       } 
     }
 }

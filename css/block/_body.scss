@@ -8,30 +8,34 @@ html {
     color:$clr-font02;
     background-color: $clr-bg35;
 }
-
+.main{
+    width: 100%;
+}
 .main__inner {
     width: 90%;
+    max-width: 1720px;
     margin:0 auto;
 }
 
 .totop{
+    text-align: center;
     font-size:14px;
     position: absolute;
-    right: 72px;
+    right: 70px;
     bottom: 600px;
     border: 1px solid #fff;
-    width: 6%;
-    padding: 55px 0 5px;
+    width: 90px;
+    height: 90px;
 
     .totop__text{
         position: relative;
-        padding-left: 15px;
+        line-height: 100px;
     }
 
     .totop__triangle{
         position: absolute;
-        bottom:45px;
-        left: 30px;
+        top: 10%;
+        left: 40%;
         color: transparent;
         display: inline-block;
         vertical-align: middle;
