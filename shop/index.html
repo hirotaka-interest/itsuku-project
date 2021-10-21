@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>慈 商品</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="../css/style.css">
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/paginathing.min.js"></script>
@@ -13,7 +14,7 @@
 
 
 <body class="body">
-  <header class="header">
+  <header class="header shop">
     <div class="header__inner">
       <div class="header__logo"><a class="header_logo-link" href="../index.html">
           <img class="header_logo-image" src="../images/logo.svg" alt="慈のロゴ画像"></a>
@@ -37,18 +38,18 @@
         <ul class="shop__container-list">
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/chisou1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/chisou2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
-              <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/chisou1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/chisou2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
+            <!-- メイン画像 -->
+              <div class="shop__img-gallery">
+                <img class="mainimage img01 shop__img-gallery-image" src="../images/chisou1@2x.png" alt="慈焼商品">
+              </div>
+              <!-- サムネイル画像 -->
+                <ul class="subimage img01 shop__img-choice">
+                  <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/chisou1@2x.png"
+                    alt="慈焼商品"></li>
+                    <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/chisou2@2x.png"
+                      alt="慈焼商品"></li>
+                    </ul>
+
             <!--商品価格等-->
             <dl class="shop__detail">
               <dt class="shop__detail-name">地層</dt>
@@ -60,13 +61,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/daizya1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/daizya2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img02 shop__img-gallery-image" src="../images/daizya1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img02 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/daizya1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/daizya2@2x.png"
@@ -83,13 +84,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/ganshou1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/ganshou2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img03 shop__img-gallery-image" src="../images/ganshou1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img03 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/ganshou1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/ganshou2@2x.png"
@@ -106,13 +107,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/hakka1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/hakka2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img04 shop__img-gallery-image" src="../images/hakka1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img04 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/hakka1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/hakka2@2x.png"
@@ -129,13 +130,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/honeyhunt1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/honeyhunt2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img05 shop__img-gallery-image" src="../images/honeyhunt1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img05 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/honeyhunt1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/honeyhunt2@2x.png"
@@ -152,13 +153,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/kenran1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/kenran2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img06 shop__img-gallery-image" src="../images/kenran1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img06 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/kenran1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/kenran2@2x.png"
@@ -175,13 +176,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/kiitigo1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/kiitigo2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img07 shop__img-gallery-image" src="../images/kiitigo1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img07 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/kiitigo1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/kiitigo2@2x.png"
@@ -198,13 +199,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/kintuba1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/kintuba2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img08 shop__img-gallery-image" src="../images/kintuba1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img08 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/kintuba1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/kintuba2@2x.png"
@@ -221,13 +222,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/koutei1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/koutei2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img09 shop__img-gallery-image" src="../images/koutei1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img09 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/koutei1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/koutei2@2x.png"
@@ -244,13 +245,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/kyouzi1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/kyouzi2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img10 shop__img-gallery-image" src="../images/kyouzi1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img10 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/kyouzi1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/kyouzi2@2x.png"
@@ -267,13 +268,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/rinpun1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/rinpun2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img11 shop__img-gallery-image" src="../images/rinpun1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img11 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/rinpun1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/rinpun2@2x.png"
@@ -290,13 +291,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/ryusui1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/ryusui2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img12 shop__img-gallery-image" src="../images/ryusui1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img12 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/ryusui1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/ryusui2@2x.png"
@@ -313,13 +314,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/ryuunome1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/ryuunome2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img13 shop__img-gallery-image" src="../images/ryuunome1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img13 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/ryuunome1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/ryuunome2@2x.png"
@@ -336,13 +337,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/seihoukei1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/seihoukei2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img14 shop__img-gallery-image" src="../images/seihoukei1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img14 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/seihoukei1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/seihoukei2@2x.png"
@@ -359,13 +360,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/shinkai1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/shinkai2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img15 shop__img-gallery-image" src="../images/shinkai1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img15 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/shinkai1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/shinkai2@2x.png"
@@ -382,13 +383,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/shirosango1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/shirosango2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img16 shop__img-gallery-image" src="../images/shirosango1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img16 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/shirosango1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/shirosango2@2x.png"
@@ -405,13 +406,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image"
-                  src="../images/taketorimonogatari1@2x.png" alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image"
-                  src="../images/taketorimonogatari2@2x.png" alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img17 shop__img-gallery-image"
+                  src="../images/taketorimonogatari1@2x.png" alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img17 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image"
                   src="../images/taketorimonogatari1@2x.png" alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image"
@@ -428,13 +429,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/touhu1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/touhu2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img18 shop__img-gallery-image" src="../images/touhu1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img18 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/touhu1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/touhu2@2x.png"
@@ -451,13 +452,13 @@
 
           <!--ここから１アイテムずつ-->
           <li class="shop__container-item">
-            <ul class="shop__img-gallery">
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/tousyou1@2x.png"
-                  alt="慈焼商品"></li>
-              <li class="shop__img-gallery-item"><img class="shop__img-gallery-image" src="../images/tousyou2@2x.png"
-                  alt="慈焼商品"></li>
-            </ul>
-            <ul class="shop__img-choice">
+            <!-- メイン画像 -->
+            <div class="shop__img-gallery">
+              <img class="mainimage img19 shop__img-gallery-image" src="../images/tousyou1@2x.png"
+                  alt="慈焼商品">
+            </div>
+            <!-- サムネイル画像 -->
+            <ul class="subimage img19 shop__img-choice">
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/tousyou1@2x.png"
                   alt="慈焼商品"></li>
               <li class="shop__img-choice-item"><img class="shop__img-choice-image" src="../images/tousyou2@2x.png"
