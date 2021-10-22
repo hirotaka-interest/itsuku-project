@@ -21,12 +21,12 @@
       </div>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-item"><a class="header_nav-link" href="#">お問い合わせ</a></li>
-          <li class="header__nav-item"><a class="header_nav-link" href="../shop.html">商品</a></li>
-          <li class="header__nav-item"><a class="header_nav-link" href="../index.html">ホーム</a></li>
+          <li class="header__nav-item nav-item-shadow"><a class="header_nav-link" href="#">お問い合わせ</a></li>
+          <li class="header__nav-item nav-item-shadow"><a class="header_nav-link" href="index.html">商品</a></li>
+          <li class="header__nav-item nav-item-shadow"><a class="header_nav-link" href="../index.html">ホーム</a></li>
         </ul>
       </nav>
-      <h1 class="header__tagline shop__catch"><span class="header__tagline-en">Products</span>商品</h1>
+      <h1 class="header__tagline shop__tagline--catchphrase"><span class="header__tagline-en">Products</span>商品</h1>
       <div class="header__scrolldown"></div>
     </div>
   </header>
@@ -475,20 +475,21 @@
         </ul>
       </div>
     </div>
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="contact__title"><span class="contact__title-en">Contact</span>お問い合わせ</h2>
       <form class="contact__form" action="#php" method="post">
         <dl class="contact__form-name">
           <dt class="contact__form-name-title"><label for="name">お名前</label></dt>
-          <dd class="contact__form-name-data"><input type="text" name="name"></dd>
+          <dd class="contact__form-name-data"><input type="text" name="name" class="contact__form-name-input"></dd>
         </dl>
         <dl class="contact__form-mail">
           <dt class="contact__form-mail-title"><label for="mail">メールアドレス</label></dt>
-          <dd class="contact__form-mail-data"><input type="text" name="mail"></dd>
+          <dd class="contact__form-mail-data"><input type="text" name="mail" class="contact__form-mail-input"></dd>
         </dl>
         <dl class="contact__form-contact">
           <dt class="contact__form-contact-title"><label for="conatct">お問い合わせ内容</label></dt>
-          <dd class="contact__form-contact-data"><textarea name="contact"></textarea></dd>
+          <dd class="contact__form-contact-data"><textarea name="contact"
+              class="contact__form-textarea-input"></textarea></dd>
         </dl>
         <button class="contact__submit-btn" type="submit">この内容で送信する</button>
       </form>
