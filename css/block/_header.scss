@@ -1,107 +1,107 @@
 @charset "utf-8";
 
 .header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 200px;
+
+  &.home {
+    background: url(../../images/mainimg_home@2x.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 30px;
+  }
+
+  &.shop {
+    background: url(../../images/prductsimg.png) no-repeat center center cover;
+    background-size: cover;
+    padding-top: 30px;
+  }
+
+  .header__inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    width: 85%;
+
+    .header_logo-image {
+      width: 13%;
+    }
+  }
+
+  .header__nav {
+    width: 10%;
+  }
+
+  .header__nav-list {
+    writing-mode: vertical-rl;
     width: 100%;
-    height: 100vh;
-    position: relative;
-    margin-bottom: 200px;
-    
-    &.home  {
-     background: url(../../images/mainimg_home@2x.jpg) no-repeat center center ;
-     background-size: cover;
-     padding-top:30px;
-    }
-    
-    &.shop  {
-     background: url(../../images/prductsimg.png) no-repeat center center cover;
-     background-size: cover;
-     padding-top:30px;
-    }
+    .header__nav-item {
+      margin-left: 10px;
 
-    .header__inner {
-     width: 90%;
-     margin: 0 auto;
-     display: flex;
-     justify-content:space-between;
-}
+      .header_nav-link {
+        font-size: $fs-18;
+        letter-spacing: 10px;
+        color: $clr-font02;
+      }
+    }
+  }
 
-    .header__logo {
-        width: 85%;
+  .header__tagline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    font-size: 4rem;
+    font-weight: lighter;
 
-        .header_logo-image{
-            width: 13%;
-        }
+    &.shop__catch {
+      font-size: 3.5rem;
+      position: relative;
+      margin-left: 70px;
     }
-
-    .header__nav {
-        width: 10%;
+    &.header__tagline-en {
+      position: absolute;
+      top: 6px;
+      right: -10px;
+      font-size: 14px;
     }
-    
-    .header__nav-list {
-        writing-mode: vertical-rl;
-        width: 100%;
-        .header__nav-item {
-            margin-left: 10px;
-            
-            .header_nav-link { 
-                font-size:$fs-18;
-                letter-spacing: 10px;
-                color:$clr-font02;
-            }
-        }
+  }
+  .header__scrolldown {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    height: 130px;
+  }
+  .header__scrolldown::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1.3px;
+    height: 30px;
+    background: #fff;
+    animation: pathmove 1.4s ease-in-out infinite;
+    opacity: 0;
+  }
+  @keyframes pathmove {
+    0% {
+      height: 0px;
+      top: 0;
+      opacity: 0;
     }
-    
-    .header__tagline {
-        position:absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        writing-mode: vertical-rl;
-        font-size: 4rem;
-        font-weight: lighter;
-       
-        &.shop__catch{
-        font-size: 3.5rem;
-        position: relative;
-        margin-left: 70px;
-        }
-        &.header__tagline-en{
-        position: absolute;
-        top: 6px;
-        right: -10px;
-        font-size: 14px;
-        }
+    30% {
+      height: 50px;
+      opacity: 1;
     }
-    .header__scrolldown{
-        position:absolute;
-	    left:50%;
-	    bottom:10px;
-	    height:130px;  
+    100% {
+      height: 100px;
+      top: 50px;
+      opacity: 0;
     }
-    .header__scrolldown::after{
-        content: "";
-	    position: absolute;
-	    top: 0;
-	    width: 1.3px;
-	    height: 30px;
-	    background: #fff;
-	    animation: pathmove 1.4s ease-in-out infinite;
-	    opacity:0;
-    }
-    @keyframes pathmove{
-        0%{
-            height:0px;
-            top:0;
-            opacity: 0;
-        }
-        30%{
-            height:50px;
-            opacity: 1;
-        }
-        100%{
-            height:100px;
-            top:50px;
-            opacity: 0;
-        }
-    }
+  }
 }
