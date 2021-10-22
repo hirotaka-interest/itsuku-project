@@ -1,27 +1,39 @@
 @charset "utf-8";
 
 .itsukuyaki {
-    width: 100%;
-    writing-mode: vertical-rl;
+  width: 100%;
+  writing-mode: vertical-rl;
+  margin-bottom: 400px;
+  padding-right: 175px;
 
-    .itsukuyaki__title {
-        font-size: 3.5rem;
-        position: relative;
+  .itsukuyaki__title {
+    font-size: 3.5rem;
+    position: relative;
+    margin-left: 70px;
 
-        .itsukuyaki__title-en {
-            position: absolute;
-            top: 6px;
-            right: -10px;
-            font-size: 14px;
-        }
+    .itsukuyaki__title-en {
+      position: absolute;
+      top: 6px;
+      right: -10px;
+      font-size: 14px;
     }
+  }
 
-    .itsukuyaki__text {
-        height: 400px;
+  .itsukuyaki__text {
+    height: 550px;
+    padding-top: 80px;
+    margin-left: 120px;
+    line-height: 3;
+  }
+
+  .itsukuyaki__photo {
+    position: absolute;
+    left: 0;
+    width: 55%;
+    max-width: 1000px;
+
+    .itsukuyaki__image {
+      width: 100%;
     }
-    
-    .itsukuyaki__photo {
-        position: absolute;
-        left: 0;
-    }
+  }
 }

@@ -1,14 +1,51 @@
 @charset "UTF-8";
 html {
-    font-size: 10px;
-}
-.body {
-    font-family:"YUmincho";
-    color:$clr-font02;
-    background-color: $clr-bg35;
+  font-size: 10px;
 }
 
+.body {
+  font-family: "YUmincho";
+  color: $clr-font02;
+  background-color: $clr-bg35;
+}
+.main {
+  width: 100%;
+}
 .main__inner {
-    width: 90%;
-    margin:0 auto;
+  width: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.totop {
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  right: 70px;
+  bottom: 600px;
+  border: 1px solid #fff;
+  width: 90px;
+  height: 90px;
+
+  .totop__text {
+    position: relative;
+    line-height: 100px;
+  }
+
+  .totop__triangle {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    border-left: 0.8em solid transparent;
+    border-right: 0.8em solid transparent;
+    border-bottom: 1.5em solid #fff;
+  }
+  .totop__link {
+    color: #fff;
+  }
 }
