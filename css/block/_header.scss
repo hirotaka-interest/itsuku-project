@@ -5,17 +5,15 @@
   height: 100vh;
   position: relative;
   margin-bottom: 200px;
+  background-size: cover;
+  padding-top: 30px;
 
   &.home {
     background: url(../../images/mainimg_home@2x.jpg) no-repeat center center;
-    background-size: cover;
-    padding-top: 30px;
   }
 
   &.shop {
-    background: url(../../images/prductsimg.png) no-repeat center center cover;
-    background-size: cover;
-    padding-top: 30px;
+    background: url(../../images/productsimg.png) no-repeat center center;
   }
 
   .header__inner {
@@ -40,6 +38,11 @@
   .header__nav-list {
     writing-mode: vertical-rl;
     width: 100%;
+
+    .nav-item-shadow{
+      text-shadow: 1px 1px #c0c0c0;
+    }
+
     .header__nav-item {
       margin-left: 10px;
 
@@ -59,25 +62,36 @@
     writing-mode: vertical-rl;
     font-size: 4rem;
     font-weight: lighter;
+    height: 400px;
 
-    &.shop__catch {
-      font-size: 3.5rem;
-      position: relative;
-      margin-left: 70px;
-    }
-    &.header__tagline-en {
+    .home__catch-en{
       position: absolute;
-      top: 6px;
-      right: -10px;
-      font-size: 14px;
+      top: 50%;
+      right: 80%;
+    }
+
+    &.shop__tagline--catchphrase {
+      font-size: 5rem;
+      letter-spacing: 3px;
+      left: 50%;
+      height: 110px;
+    }
+
+    .header__tagline-en {
+      position: absolute;
+      top: 8%;
+      right: -5%;
+      font-size: 1.8rem;
     }
   }
+
   .header__scrolldown {
     position: absolute;
     left: 50%;
     bottom: 10px;
     height: 130px;
   }
+
   .header__scrolldown::after {
     content: "";
     position: absolute;
@@ -88,6 +102,7 @@
     animation: pathmove 1.4s ease-in-out infinite;
     opacity: 0;
   }
+
   @keyframes pathmove {
     0% {
       height: 0px;

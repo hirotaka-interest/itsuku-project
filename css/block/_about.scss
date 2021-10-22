@@ -22,10 +22,26 @@
   .about__photo {
     margin-left: 60px;
     width: 25%;
+    position: relative;
+    display: block;
+    overflow: hidden;
 
     .about__image {
       padding-top: 100px;
       width: 100%;
+      position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    -webkit-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+	    width: 100%;
+      display: block;
+	    -webkit-transition: .4s ease-in-out;
+	    transition: .4s ease-in-out;
+    }
+    .about__image:hover:nth-child(2){
+      transform: translate(-50%, -50%) scale(1.15) !important;
+      opacity: 0;
     }
   }
 

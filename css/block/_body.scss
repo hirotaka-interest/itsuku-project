@@ -4,7 +4,7 @@ html {
 }
 
 .body {
-  font-family: "YUmincho";
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
   color: $clr-font02;
   background-color: $clr-bg35;
 }
@@ -29,7 +29,7 @@ html {
 
   .totop__text {
     position: relative;
-    line-height: 100px;
+    line-height: 120px;
   }
 
   .totop__triangle {
@@ -49,3 +49,6 @@ html {
     color: #fff;
   }
 }
+  .totop:hover{
+    opacity: 0.4;
+  }
