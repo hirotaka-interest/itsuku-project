@@ -5,11 +5,16 @@
   writing-mode: vertical-rl;
   margin-bottom: 400px;
   padding-right: 175px;
+  
 
   .about__title {
     font-size: 3.5rem;
     position: relative;
     margin-left: 70px;
+
+    @include desktop{
+      font-size: 4.5rem;
+    }
   }
 
   .about__title-en {
@@ -50,6 +55,12 @@
     margin-left: 60px;
     line-height: 3;
     height: 600px;
+
+    @include desktop{
+      font-size: 24px;
+      height: 800px;
+      line-height: 4;
+    }
   }
 
   .about__sns-list {
@@ -69,6 +80,9 @@
 
     .fab {
       font-size: 2.5em;
+      @include desktop{
+        font-size: 5.5rem
+      }
     }
   }
 }

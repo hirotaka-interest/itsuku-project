@@ -7,12 +7,26 @@
   padding-left: 400px;
   text-align: center;
 
+  @include mobile{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  @include tablet{
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .contact__title {
     width: 35%;
     margin: 0 auto;
     font-size: 3.5rem;
     position: relative;
     margin-bottom: 60px;
+
+    @include desktop{
+      font-size: 4.5rem;
+    }
 
     .contact__title-en {
       position: absolute;
@@ -30,6 +44,10 @@
 
       .contact__form-name-title {
         text-align: left;
+
+        @include desktop{
+          font-size: 24px;
+        }
       }
     }
 
@@ -38,6 +56,10 @@
 
       .contact__form-mail-title {
         text-align: left;
+
+        @include desktop{
+          font-size: 24px;
+        }
       }
     }
 
@@ -46,6 +68,10 @@
 
       .contact__form-contact-title {
         text-align: left;
+
+        @include desktop{
+          font-size: 24px;
+        }
       }
     }
   }
@@ -55,6 +81,10 @@
     padding: 5px 230px;
     margin-bottom: 50px;
     width: 100%;
+
+    @include desktop{
+      padding: 25px 230px;
+    }
   }
 
   .contact__form-mail-input {
@@ -62,6 +92,10 @@
     padding: 5px 230px;
     margin-bottom: 50px;
     width: 100%;
+
+    @include desktop{
+      padding: 25px 230px;
+    }
   }
 
   .contact__form-textarea-input {
@@ -69,6 +103,10 @@
     padding: 70px 225px;
     margin-bottom: 50px;
     width: 100%;
+
+    @include desktop{
+      padding: 140px 225px;
+    }
   }
 
   .contact__submit-btn {
@@ -76,6 +114,10 @@
     background: none;
     color: #fff;
     padding: 10px 50px;
+
+    @include desktop{
+      font-size: 24px;
+    }
   }
 
   .contact__submit-btn:hover {

@@ -34,6 +34,10 @@
         .footer_nav-link {
           letter-spacing: 8px;
           color: $clr-font02;
+
+          @include desktop{
+            font-size: 2.8rem;
+          }
         }
       }
     }
@@ -41,5 +45,9 @@
 
   .footer__copy {
     text-align: center;
+
+    @include desktop{
+      font-size: 20px;
+    }
   }
 }

@@ -7,10 +7,16 @@
   padding-right: 175px;
   position: relative;
 
+  
+
   .products__title {
     font-size: 3.5rem;
     position: relative;
     margin-left: 70px;
+
+    @include desktop{
+      font-size: 4.5rem;
+    }
   }
 
   .products__title-en {
@@ -62,5 +68,9 @@
     border-right: 1px solid #fff;
     position: absolute;
     bottom: 0;
+
+    @include desktop{
+      font-size: 24px;
+    }
   }
 }

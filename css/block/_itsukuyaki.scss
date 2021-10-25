@@ -6,10 +6,18 @@
   margin-bottom: 400px;
   padding-right: 175px;
 
+  @include tablet{
+    writing-mode: horizontal-tb;
+  }
+
   .itsukuyaki__title {
     font-size: 3.5rem;
     position: relative;
     margin-left: 70px;
+
+    @include desktop{
+      font-size: 4.5rem;
+    }
 
     .itsukuyaki__title-en {
       position: absolute;
@@ -24,6 +32,12 @@
     padding-top: 80px;
     margin-left: 120px;
     line-height: 3;
+
+    @include desktop{
+      font-size: 24px;
+      height: 800px;
+      line-height: 4;
+    }
   }
 
   .itsukuyaki__photo {
