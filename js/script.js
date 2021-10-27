@@ -1,11 +1,31 @@
+//logoの表示
 $(function () {
-  //-----paginathing-----
-  $('.shop__container-list').paginathing({
-    perPage: 6,//1ページあたりの表示件数
-    activeClass: 'navi-active',//現在のページ番号に任意のclassを付与できます
-    firstText: '<i class="fas fa-angle-double-left"></i>', // "最初ページ"に移動するfontawesome
-    lastText: '<i class="fas fa-angle-double-right"></i>', // "最後のページ"に移動するfontawesome
+  $(window).on('load',function(){
+    $("#splash").delay(4200).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+    $("#splash_logo").delay(4200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
   });
+  });
+
+
+//-----paginathing-----
+$(function () {
+  var windowWidth = $(window).width();
+  var windowTb = 1024;
+  if (windowWidth <= windowTb) {
+    $('.shop__container-list').paginathing({
+      perPage: 4,
+      activeClass: 'navi-active',//現在のページ番号に任意のclassを付与できます
+      firstText: '<i class="fas fa-angle-double-left"></i>', // "最初ページ"に移動するfontawesome
+      lastText: '<i class="fas fa-angle-double-right"></i>', // "最後のページ"に移動するfontawesome
+    });
+  } else {
+    $('.shop__container-list').paginathing({
+      perPage: 6,
+      activeClass: 'navi-active',//現在のページ番号に任意のclassを付与できます
+      firstText: '<i class="fas fa-angle-double-left"></i>', // "最初ページ"に移動するfontawesome
+      lastText: '<i class="fas fa-angle-double-right"></i>', // "最後のページ"に移動するfontawesome
+    });
+  }
 
 
 
@@ -22,6 +42,8 @@ $(function () {
     $('img.shop__img-gallery-image.'+className[1]).attr('src',imageurl);
   });
 });
+
+
 
 
 
