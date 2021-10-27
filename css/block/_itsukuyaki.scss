@@ -18,7 +18,7 @@
     margin-left: 70px;
 
     @include desktop {
-      font-size: 4.5rem;
+      font-size: 4.0rem;
     }
 
     @include tablet {
@@ -48,7 +48,7 @@
     line-height: 3;
 
     @include desktop {
-      font-size: 2.4rem;
+      font-size: 2.0rem;
       height: 800px;
       line-height: 4;
     }
