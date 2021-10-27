@@ -3,19 +3,9 @@
 .contact {
   width: 100%;
   margin-bottom: 400px;
-  padding-right: 400px;
-  padding-left: 400px;
   text-align: center;
 
-  @include mobile{
-    padding-right: 0;
-    padding-left: 0;
-  }
-  
-  @include tablet{
-    padding-right: 0;
-    padding-left: 0;
-  }
+
 
   .contact__title {
     width: 35%;
@@ -31,6 +21,7 @@
     .contact__title-en {
       position: absolute;
       top: -13%;
+      right: 43%;
       font-size: 14px;
     }
   }
@@ -44,9 +35,10 @@
 
       .contact__form-name-title {
         text-align: left;
+        font-size: 1.8rem;
 
         @include desktop{
-          font-size: 24px;
+          font-size: 2.4rem;
         }
       }
     }
@@ -56,21 +48,23 @@
 
       .contact__form-mail-title {
         text-align: left;
-
+        font-size: 1.8rem;
+        
         @include desktop{
-          font-size: 24px;
+          font-size: 2.4rem;
         }
       }
     }
-
+    
     .contact__form-contact {
       width: 100%;
-
+      
       .contact__form-contact-title {
         text-align: left;
+        font-size: 1.8rem;
 
         @include desktop{
-          font-size: 24px;
+          font-size: 2.4rem;
         }
       }
     }
@@ -82,39 +76,41 @@
     margin-bottom: 50px;
     width: 100%;
 
+
     @include desktop{
       padding: 25px 230px;
     }
   }
-
+  
   .contact__form-mail-input {
     border: 1px solid #fff;
     padding: 5px 230px;
     margin-bottom: 50px;
     width: 100%;
-
+    
     @include desktop{
       padding: 25px 230px;
     }
   }
-
+  
   .contact__form-textarea-input {
     border: 1px solid #fff;
     padding: 70px 225px;
     margin-bottom: 50px;
     width: 100%;
-
+    
     @include desktop{
       padding: 140px 225px;
     }
   }
-
+  
   .contact__submit-btn {
     border: 1px solid #fff;
     background: none;
     color: #fff;
     padding: 10px 50px;
-
+    font-size: 1.8rem;
+    
     @include desktop{
       font-size: 24px;
     }
