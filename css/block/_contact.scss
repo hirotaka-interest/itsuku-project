@@ -3,19 +3,7 @@
 .contact {
   width: 100%;
   margin-bottom: 400px;
-  padding-right: 400px;
-  padding-left: 400px;
   text-align: center;
-
-  @include mobile{
-    padding-right: 0;
-    padding-left: 0;
-  }
-  
-  @include tablet{
-    padding-right: 0;
-    padding-left: 0;
-  }
 
   .contact__title {
     width: 35%;
@@ -24,8 +12,8 @@
     position: relative;
     margin-bottom: 60px;
 
-    @include desktop{
-      font-size: 4.5rem;
+    @include desktop {
+      font-size: 4.0rem;
     }
 
     .contact__title-en {
@@ -36,17 +24,21 @@
   }
 
   .contact__form {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
 
     .contact__form-name {
       width: 100%;
 
+      .contact__form-name-data {
+        width: 100%;
+      }
       .contact__form-name-title {
         text-align: left;
+        font-size: 1.8rem;
 
-        @include desktop{
-          font-size: 24px;
+        @include desktop {
+          font-size: 2.0rem;
         }
       }
     }
@@ -54,11 +46,15 @@
     .contact__form-mail {
       width: 100%;
 
+      .contact__form-mail-data {
+        width: 100%;
+      }
       .contact__form-mail-title {
         text-align: left;
+        font-size: 1.8rem;
 
-        @include desktop{
-          font-size: 24px;
+        @include desktop {
+          font-size: 2.0rem;
         }
       }
     }
@@ -66,11 +62,15 @@
     .contact__form-contact {
       width: 100%;
 
+      .contact__form-contact-data {
+        width: 100%;
+      }
       .contact__form-contact-title {
         text-align: left;
+        font-size: 1.8rem;
 
-        @include desktop{
-          font-size: 24px;
+        @include desktop {
+          font-size: 2.0rem;
         }
       }
     }
@@ -78,34 +78,35 @@
 
   .contact__form-name-input {
     border: 1px solid #fff;
-    padding: 5px 230px;
+    padding: 5px;
     margin-bottom: 50px;
     width: 100%;
 
-    @include desktop{
-      padding: 25px 230px;
+    @include desktop {
+      padding: 25px;
     }
   }
 
   .contact__form-mail-input {
     border: 1px solid #fff;
-    padding: 5px 230px;
+    padding: 5px;
     margin-bottom: 50px;
     width: 100%;
 
-    @include desktop{
-      padding: 25px 230px;
+    @include desktop {
+      padding: 25px;
     }
   }
 
   .contact__form-textarea-input {
     border: 1px solid #fff;
-    padding: 70px 225px;
+    padding: 5px 0 70px;
     margin-bottom: 50px;
+    color: #fff;
     width: 100%;
 
-    @include desktop{
-      padding: 140px 225px;
+    @include desktop {
+      padding: 140px;
     }
   }
 
@@ -114,8 +115,9 @@
     background: none;
     color: #fff;
     padding: 10px 50px;
+    font-size: 1.8rem;
 
-    @include desktop{
+    @include desktop {
       font-size: 24px;
     }
   }

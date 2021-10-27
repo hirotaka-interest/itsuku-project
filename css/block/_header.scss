@@ -6,12 +6,12 @@
   position: relative;
   margin-bottom: 200px;
   padding-top: 30px;
-  
+
   &.home {
     background: url(../../images/mainimg_home@2x.jpg) no-repeat center center;
     background-size: cover;
   }
-  
+
   &.shop {
     background: url(../../images/productsimg.png) no-repeat center center;
     background-size: cover;
@@ -30,11 +30,13 @@
     .header_logo-image {
       width: 13%;
 
-      @include mobile{
+      @include mobile {
         width: 25%;
       }
     }
   }
+
+  
 
   .header__nav {
     width: 10%;
@@ -44,7 +46,7 @@
     writing-mode: vertical-rl;
     width: 100%;
 
-    .nav-item-shadow{
+    .nav-item-shadow {
       text-shadow: 1px 1px #c0c0c0;
     }
 
@@ -56,8 +58,8 @@
         letter-spacing: 10px;
         color: $clr-font02;
 
-        @include desktop{
-          font-size: 2.8rem;
+        @include desktop {
+          font-size: 2.0rem;
         }
       }
     }
@@ -73,17 +75,17 @@
     font-weight: lighter;
     height: 400px;
 
-    @include desktop{
+    @include desktop {
       font-size: 5rem;
       height: auto;
     }
 
-    @include mobile{
+    @include mobile {
       font-size: 5rem;
       height: auto;
     }
 
-    .home__catch-en{
+    .home__catch-en {
       position: absolute;
       top: 50%;
       right: 80%;
@@ -95,7 +97,7 @@
       left: 50%;
       height: 110px;
 
-      @include desktop{
+      @include desktop {
         font-size: 7rem;
         height: auto;
       }
@@ -107,7 +109,7 @@
       right: -5%;
       font-size: 1.8rem;
 
-      @include desktop{
+      @include desktop {
         font-size: 2.3rem;
       }
     }

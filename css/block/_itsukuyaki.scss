@@ -6,8 +6,10 @@
   margin-bottom: 400px;
   padding-right: 175px;
 
-  @include tablet{
+  @include tablet {
     writing-mode: horizontal-tb;
+    margin-bottom: 200px;
+    padding-right: 0;
   }
 
   .itsukuyaki__title {
@@ -15,8 +17,14 @@
     position: relative;
     margin-left: 70px;
 
-    @include desktop{
-      font-size: 4.5rem;
+    @include desktop {
+      font-size: 4.0rem;
+    }
+
+    @include tablet {
+      font-size: 2.6rem;
+      text-align: center;
+      margin-left: 0;
     }
 
     .itsukuyaki__title-en {
@@ -24,19 +32,31 @@
       top: 6px;
       right: -10px;
       font-size: 14px;
+
+      @include tablet {
+        top: -20px;
+        right: 47%;
+      }
     }
   }
 
   .itsukuyaki__text {
-    height: 550px;
+    height: 570px;
     padding-top: 80px;
     margin-left: 120px;
+    font-size: 1.8rem;
     line-height: 3;
 
-    @include desktop{
-      font-size: 24px;
+    @include desktop {
+      font-size: 2.0rem;
       height: 800px;
       line-height: 4;
+    }
+    @include tablet {
+      font-size: 1.4rem;
+      width: 50%;
+      margin: 0 auto 100px;
+      height: 226px;
     }
   }
 
@@ -46,8 +66,16 @@
     width: 55%;
     max-width: 1000px;
 
+    @include tablet {
+      position: initial;
+    }
+
     .itsukuyaki__image {
       width: 100%;
+
+      @include tablet {
+        width: 100vw;
+      }
     }
   }
 }

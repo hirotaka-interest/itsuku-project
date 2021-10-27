@@ -4,7 +4,8 @@ html {
 }
 
 .body {
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN",
+    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
   color: $clr-font02;
   background-color: $clr-bg35;
 }
@@ -15,6 +16,10 @@ html {
   width: 90%;
   max-width: 1720px;
   margin: 0 auto;
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .totop {
@@ -27,18 +32,21 @@ html {
   width: 90px;
   height: 90px;
 
-  @include desktop{
+  @include desktop {
     font-size: 16px;
     width: 120px;
     height: 120px;
+  }
+  @include tablet {
+    bottom: 460px;
   }
 
   .totop__text {
     position: relative;
     line-height: 120px;
 
-    @include desktop{
-     line-height: 160px;
+    @include desktop {
+      line-height: 160px;
     }
   }
 
@@ -59,6 +67,6 @@ html {
     color: #fff;
   }
 }
-  .totop:hover{
-    opacity: 0.4;
-  }
+.totop:hover {
+  opacity: 0.4;
+}

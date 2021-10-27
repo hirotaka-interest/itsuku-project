@@ -5,15 +5,28 @@
   writing-mode: vertical-rl;
   margin-bottom: 400px;
   padding-right: 175px;
-  
+
+  @include tablet {
+    writing-mode: horizontal-tb;
+    padding-right: 0;
+    position: relative;
+    margin-bottom: 260px;
+  }
 
   .about__title {
     font-size: 3.5rem;
     position: relative;
     margin-left: 70px;
 
-    @include desktop{
-      font-size: 4.5rem;
+    @include desktop {
+      font-size: 4.0rem;
+    }
+
+    @include tablet {
+      margin-left: 0;
+      font-size: 2.6rem;
+      margin-bottom: 80px;
+      text-align: center;
     }
   }
 
@@ -22,6 +35,11 @@
     top: 6px;
     right: -10px;
     font-size: 14px;
+
+    @include tablet {
+      right: 48%;
+      top: -35%;
+    }
   }
 
   .about__photo {
@@ -31,20 +49,34 @@
     display: block;
     overflow: hidden;
 
+    @include tablet {
+      position: initial;
+      height: 10%;
+      object-fit: cover;
+      object-position: 100% 12%;
+    }
+
     .about__image {
       padding-top: 100px;
       width: 100%;
       position: absolute;
-	    top: 50%;
-	    left: 50%;
-	    -webkit-transform: translate(-50%, -50%);
-	    transform: translate(-50%, -50%);
-	    width: 100%;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 100%;
       display: block;
-	    -webkit-transition: .4s ease-in-out;
-	    transition: .4s ease-in-out;
+      -webkit-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out;
+
+      @include tablet {
+        height: 60%;
+        object-fit: cover;
+        object-position: 100% 12%;
+        top: 52%;
+      }
     }
-    .about__image:hover:nth-child(2){
+    .about__image:hover:nth-child(2) {
       transform: translate(-50%, -50%) scale(1.15) !important;
       opacity: 0;
     }
@@ -53,13 +85,23 @@
   .about__text {
     padding-top: 100px;
     margin-left: 60px;
+    font-size: 1.8rem;
     line-height: 3;
-    height: 600px;
+    height: 605px;
 
-    @include desktop{
-      font-size: 24px;
+    @include desktop {
+      font-size: 2.0rem;
       height: 800px;
       line-height: 4;
+    }
+
+    @include tablet {
+      padding-top: 0;
+      margin: auto;
+      font-size: 1.4rem;
+      width: 50%;
+      margin-bottom: 810px;
+      height: 0;
     }
   }
 
@@ -67,10 +109,21 @@
     writing-mode: horizontal-tb;
     padding-top: 350px;
 
+    @include tablet {
+      //writing-mode: horizontal-tb;
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 0;
+    }
+
     .about__sns-item {
       margin-bottom: 60px;
       .about__sns-link {
         color: #fff;
+      }
+      @include tablet {
+        margin-bottom: 0;
+        font-size: 1.4rem;
       }
     }
 
@@ -80,8 +133,8 @@
 
     .fab {
       font-size: 2.5em;
-      @include desktop{
-        font-size: 5.5rem
+      @include desktop {
+        font-size: 5.5rem;
       }
     }
   }

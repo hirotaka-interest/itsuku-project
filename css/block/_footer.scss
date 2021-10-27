@@ -20,22 +20,30 @@
     width: 40%;
     margin: 0 auto;
 
+    @include tablet {
+      margin: 0 auto 40px;
+    }
+
     .footer__nav-list {
       display: flex;
       writing-mode: vertical-rl;
+      font-size: 1.8rem;
       flex-direction: column;
       justify-content: center;
       width: 100%;
       margin: 0 auto 30px;
 
+
       .footer__nav-item {
         margin-left: 15px;
+
+        
 
         .footer_nav-link {
           letter-spacing: 8px;
           color: $clr-font02;
 
-          @include desktop{
+          @include desktop {
             font-size: 2.8rem;
           }
         }
@@ -45,8 +53,9 @@
 
   .footer__copy {
     text-align: center;
+    font-size: 1.4rem;
 
-    @include desktop{
+    @include desktop {
       font-size: 20px;
     }
   }
